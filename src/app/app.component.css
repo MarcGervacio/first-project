@@ -1,0 +1,116 @@
+.title {
+    background-color: black;
+    font-weight: bolder;
+    padding: 20px;
+    height: 70px;
+    margin-left: 0;
+    font-size: 20px;
+    position: absolute;
+}
+
+.main-title:hover{
+    color: lightslategray;
+}
+
+.main-title {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: black;
+    width: 95px;
+    position: relative;
+    top: -15px;
+}
+
+button {
+    position: relative;
+    top: -57px;
+    right: -1280px;
+}
+
+.add-item-overlay {
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+
+.dialog-overlay {
+    position: fixed;
+    background-color: #78789c;
+    z-index: 2;
+    width: 65%;
+    height: 85%;
+    margin: 40px 235px;
+    border-radius: 30px;
+    padding: 0 30px;
+}
+
+.close-btn, .add-btn {
+    width: 80px;
+    height: 40px;
+    left: 30px;
+}
+
+.add-btn {
+    left: 50px;
+    width: 140px;
+}
+
+.btn-add-feature-dialog {
+    position: relative;
+    top: -3px;
+    left: 10px;
+}
+
+.info-dialog {
+    overflow-y: auto;
+    height: 355px;
+}
+
+.btn-dialog {
+    position: fixed;
+    top: 560px;
+}
+
+.dialog-title {
+    width: 100%;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.dialog-input-title {
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 5px;
+}
+
+.dialog-input-feature {
+    width: 25%;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.dialog-features {
+    color: white;
+    font-size: 25px;
+}
+
+.add-feature-dialog {
+    height: 40px;
+}
+
+.dialog-list {
+    margin: 0 10px 10px;
+}
+
+.txtarea-dialog {
+    width: 100%;
+    padding-left: 5px;
+    font-size: 20px;
+}

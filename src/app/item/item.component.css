@@ -1,0 +1,53 @@
+.main-div {
+    width: 100%;
+    position: relative;
+    display: inline-flex;
+}
+.firstdiv {
+    background-color: #78789c;
+    font-size: medium;
+    width: auto;
+    height: 450px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.add-feature {
+    width: 100%;
+    padding-right: 20px;
+}
+
+.firstdiv:not(:last-child) {
+    margin-right: 20px;
+}
+
+.seconddiv {
+    font-weight: 700;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    color: black;
+    margin-right: 15px;
+    width: 85%;
+}
+
+.firstdiv:hover {
+    background-color: rgb(46, 46, 124);
+}
+
+.addInfo {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    background-color: #515183;
+    border: 1px solid rgb(53, 53, 170);
+    width: 308x;
+    height: 80px;
+    position: relative;
+    left: -10px;
+}
+
+.btn-add-feature {
+    width: 10%;
+}

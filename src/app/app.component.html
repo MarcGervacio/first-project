@@ -1,0 +1,24 @@
+<div class="title">
+    <h3 class="main-title">GitStore</h3>
+    <button class="btn btn-success btn-add" (click)="clickedAdd()">+</button>
+    <app-body></app-body>
+</div>
+<div class="add-item-overlay" *ngIf="isClicked"></div>
+<div class="dialog-overlay" *ngIf="isClicked">
+    <h2 class="dialog-title">Add Subject</h2>
+    <div class="info-dialog">
+        <input class="dialog-input-title" type="text" placeholder="Enter Title Here">
+        <div class="add-feature-dialog">
+            <input class="dialog-input-feature" type="text" placeholder="Enter Feature" [(ngModel)]="newFeature" [disabled]="numberOfFeature.length >= 5">
+            <button class="btn btn-success btn-add-feature-dialog" styles="background-color: green" (click)="addFeature()" [disabled]="hasHovered && newFeature === ''">+</button><br><br>
+        </div>
+        <ul class="dialog-list">
+            <li class="dialog-features" *ngFor="let log of numberOfFeature">{{ log }}</li>
+        </ul>
+        <textarea class="txtarea-dialog" cols="50" rows="10" placeholder="Enter Description Here ..."></textarea>
+    </div>
+    <div class="btn-dialog">
+        <button class="btn btn-danger close-btn" (click)="clickedAdd()">Close</button>
+        <button class="btn btn-success add-btn">Add New Subject</button>
+    </div>
+</div>

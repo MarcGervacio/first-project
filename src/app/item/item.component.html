@@ -1,0 +1,50 @@
+<div class="main-div">
+    <div class="firstdiv">
+        <div class="seconddiv">Java Mastery</div>
+        <h5>Features:</h5>
+        <ul>
+            <li>Classes and Variables</li>
+            <li>Basic Java</li>
+            <li>Advanced Java</li>
+            <li>Excercises</li>
+            <li *ngFor="let log of numberOfFeature">{{ log }}</li>
+        </ul>
+        <div class="add-feature">
+            <input type="text" placeholder="Enter Feature" [(ngModel)]="newFeature" [disabled]="numberOfFeature.length >= 5">
+            <button class="btn btn-success btn-add-feature" styles="background-color: green" (click)="addFeature()" [disabled]="hasHovered && newFeature === ''">+</button><br><br>
+        </div>
+        <h5 class="addInfo">Java Mastery: This includes all the things that you will need in order to learn both basic and advanced Java Programming Language</h5>
+    </div>
+    <div class="firstdiv">
+        <div class="seconddiv">Angular Mastery</div>
+        <h5>Features:</h5>
+        <ul>
+            <li>Classes and Variables</li>
+            <li>Basic Java</li>
+            <li>Advanced Java</li>
+            <li>Excercises</li>
+            <li *ngFor="let log of numberOfFeature">{{ log }}</li>
+        </ul>
+        <div class="add-feature">
+            <input type="text" placeholder="Enter Feature" [(ngModel)]="newFeature" [disabled]="numberOfFeature.length >= 5">
+            <button class="btn btn-success btn-add-feature" styles="background-color: green" (click)="addFeature()" [disabled]="hasHovered && newFeature === ''">+</button><br><br>
+        </div>
+        <h5 class="addInfo">Java Mastery: This includes all the things that you will need in order to learn both basic and advanced Java Programming Language</h5>
+    </div>
+    <div class="firstdiv">
+        <div class="seconddiv">Java Mastery</div>
+        <h5>Features:</h5>
+        <ul>
+            <li>Classes and Variables</li>
+            <li>Basic Java</li>
+            <li>Advanced Java</li>
+            <li>Excercises</li>
+            <li *ngFor="let log of numberOfFeature">{{ log }}</li>
+        </ul>
+        <div class="add-feature">
+            <input type="text" placeholder="Enter Feature" [(ngModel)]="newFeature" [disabled]="numberOfFeature.length >= 5">
+            <button class="btn btn-success btn-add-feature" styles="background-color: green" (click)="addFeature()" [disabled]="hasHovered && newFeature === ''">+</button><br><br>
+        </div>
+        <h5 class="addInfo">Java Mastery: This includes all the things that you will need in order to learn both basic and advanced Java Programming Language</h5>
+    </div>
+</div>
