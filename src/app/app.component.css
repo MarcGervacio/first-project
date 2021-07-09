@@ -114,3 +114,29 @@ button {
     padding-left: 5px;
     font-size: 20px;
 }
+
+@media (max-width: 768px) {
+    .title {
+        width: 100%;
+    }
+    button {
+        float: right;
+        right: 0;
+    }
+    .dialog-overlay {
+        margin: 40px 10px;
+        width: 95%;
+    }
+    .add-item-overlay {
+        height: 250%;
+    }
+    .dialog-input-feature {
+        width: 80%;
+    }
+    .btn-add-feature-dialog {
+        top: 1px;
+    }
+    .add-btn {
+        left: 5px;
+    }
+}

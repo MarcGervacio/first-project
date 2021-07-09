@@ -1,6 +1,7 @@
 <div class="title">
     <h3 class="main-title">GitStore</h3>
-    <button class="btn btn-success btn-add" (click)="clickedAdd()">+</button>
+    <button class="btn btn-success btn-add" (click)="clickedAdd()" (mouseover)="hoveredAdd()" (mouseout)="hoveredAdd()" *ngIf="!isHovered">+</button>
+    <button class="btn btn-success btn-add hovered" (click)="clickedAdd()" (mouseover)="hoveredAdd()" (mouseout)="hoveredAdd()" *ngIf="isHovered">Add Subject</button>
     <app-body></app-body>
 </div>
 <div class="add-item-overlay" *ngIf="isClicked"></div>

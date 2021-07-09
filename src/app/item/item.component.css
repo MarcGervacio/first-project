@@ -51,3 +51,19 @@ input {
 .btn-add-feature {
     width: 10%;
 }
+
+@media (max-width: 768px) {
+    .main-div {
+        display: block;
+    }
+    .firstdiv {
+        padding: 10px 20px;
+        margin: 20px 0;
+    }
+    .firstdiv:not(:last-child) {
+        margin-right: 0;
+    }
+    input {
+        width: 80%;
+    }
+}
